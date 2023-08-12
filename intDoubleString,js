@@ -1,0 +1,16 @@
+let input = [
+    "integer",
+    '2',
+];
+
+let print = this.print || console.log;
+let gets = this.gets || ((arr, index) => () => arr[index++])(input, 0);
+
+let commnad = gets();
+let number = gets()
+
+switch (commnad) {
+    case "integer": console.log(parseInt(number) + 1); break;
+    case "real": console.log((parseFloat(number) + 1).toFixed(2)); break;
+    case 'text': console.log(number + "*"); break;
+}
