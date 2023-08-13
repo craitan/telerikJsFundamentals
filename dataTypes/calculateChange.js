@@ -19,32 +19,35 @@ let fiveStotinki = 0;
 let twoStotinki = 0;
 let oneStotinka = 0;
 
-if (change >= 100) {
-    oneLev = Math.floor(change / 100);
-    change %= 100;
-}
-if (change >= 50) {
-    fiftyStotinki = Math.floor(change / 50);
-    change %= 50;
-}
-if (change >= 20) {
-    twentyStotinki = Math.floor(change / 20);
-    change %= 20;
-}
-if (change >= 10) {
-    tenStotinki = Math.floor(change / 10);
-    change %= 10;
-}
-if (change >= 5) { 
-    fiveStotinki = Math.floor(change / 5); 
-    change %= 5; 
-}
-if (change >= 2) {
-    twoStotinki = Math.floor(change / 2);
-    change %= 2;
-}
-if (change === 1) {
-    oneStotinka = 1;
+while (change > 0) {
+    if (change >= 100) {
+        oneLev = Math.floor(change / 100);
+        change %= 100;
+    }
+    if (change >= 50) {
+        fiftyStotinki = Math.floor(change / 50);
+        change %= 50;
+    }
+    if (change >= 20) {
+        twentyStotinki = Math.floor(change / 20);
+        change %= 20;
+    }
+    if (change >= 10) {
+        tenStotinki = Math.floor(change / 10);
+        change %= 10;
+    }
+    if (change >= 5) {
+        fiveStotinki = Math.floor(change / 5);
+        change %= 5;
+    }
+    if (change >= 2) {
+        twoStotinki = Math.floor(change / 2);
+        change %= 2;
+    }
+    if (change === 1) {
+        oneStotinka = 1;
+        break;
+    }
 }
 
 if (oneLev > 0) {
