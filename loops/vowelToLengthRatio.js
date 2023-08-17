@@ -1,6 +1,6 @@
-//let input = ["4", "pizza", "macaroni", "kiufte", "banica"];
+let input = ["4", "pizza", "macaroni", "kiufte", "banica"];
 //let input = ["4", "macaroni", "kiufte", "banica","aaaawwww"];
-let input = ["2", "bb", "ww"];
+//let input = ["2", "bb", "www"];
 
 let gets = this.gets || ((arr, index) => () => arr[index++])(input, 0);
 
@@ -41,21 +41,17 @@ for (let i = 0; i < n; i++) {
             foodName = currentFood;
             countVowels = currentFoodVowels
             numberOfLetters = currentFoodLetters
-        }
-    } else if (currentPercentage === percentage && currentFoodVowels === countVowels) {
-        if (currentFoodLetters > numberOfLetters) {
-            percentage = currentPercentage;
-            foodName = currentFood;
-            countVowels = currentFoodVowels
-            numberOfLetters = currentFoodLetters
+        } else if (currentFoodVowels === countVowels) {
+            if (currentFoodLetters > numberOfLetters) {
+                percentage = currentPercentage;
+                foodName = currentFood;
+                countVowels = currentFoodVowels
+                numberOfLetters = currentFoodLetters
+            }
         }
     }
     currentFoodVowels = 0;
     currentFoodLetters = 0;
 }
-if (percentage !== 0) {
-    console.log(`${foodName} ${countVowels}/${numberOfLetters}`)
-}
 
-
-
+console.log(`${foodName} ${countVowels}/${numberOfLetters}`)
