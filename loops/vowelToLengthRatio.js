@@ -1,6 +1,4 @@
 let input = ["4", "pizza", "macaroni", "kiufte", "banica"];
-//let input = ["4", "macaroni", "kiufte", "banica","aaaawwww"];
-//let input = ["2", "bb", "www"];
 
 let gets = this.gets || ((arr, index) => () => arr[index++])(input, 0);
 
