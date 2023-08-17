@@ -9,7 +9,7 @@ if (!isNaN(commnad)) {
     let number = parseFloat(commnad);
     let result = number + 1
     console.log(result)
-}else{
+} else {
     let reversedWord = commnad.split('').reverse().join("")
     console.log(reversedWord)
 }
