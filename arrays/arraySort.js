@@ -7,7 +7,7 @@ let numbers = gets().split(',').map(Number);
 let arrayZero = [];
 let arrayNumbers = [];
 
-for (num of numbers){
+for (let num of numbers){
     if (num === 0){
         arrayZero.push(num);
     } else{
