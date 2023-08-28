@@ -21,4 +21,4 @@ for (let i = 1; i < numbers.length - 1; i++) {
 }
 
 
-console.log(numbers);
+console.log(`[${numbers.join(', ')}]`);
